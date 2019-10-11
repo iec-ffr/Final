@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Cinza Platinum",
+            "price": 1570.0
+        },
+        {
+            "id": 2,
+            "name": "Prata Sirius",
+            "price": 1570.0
+        },
+        {
+            "id": 3,
+            "name": "Branco Cristal",
+            "price": 490.0
+        },
+        {
+            "id": 4,
+            "name": "Preto Ninja",
+            "price": 0.0
+        },
+        {
+            "id": 5,
+            "name": "Vermelho Tornado",
+            "price": 490.0
+        }
+    ]
+}

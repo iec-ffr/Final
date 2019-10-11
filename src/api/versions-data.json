@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "model": "basic",
+            "name": "1.0",
+            "price": 0.0
+        },
+        {
+            "id": 2,
+            "model": "basic",
+            "name": "1.6",
+            "price": 10000.0
+        },
+        {
+            "id": 3,
+            "model": "top"  ,
+            "name": "Sense",
+            "price": 0.0
+        },
+        {
+            "id": 4,
+            "model": "top"  ,
+            "name": "Confortline",
+            "price": 10000.0
+        },
+        {
+            "id": 5,
+            "model": "top"  ,
+            "name": "Highline",
+            "price": 20000.0
+        },
+        {
+            "id": 6,
+            "model": "top"  ,
+            "name": "MSI",
+            "price": 15000.0
+        }
+    ]
+}

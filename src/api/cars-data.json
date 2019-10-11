@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "model": "Gol", 
+            "price": 42590.0
+        },
+        {
+            "id": 2,
+            "model": "Voyage",
+            "price": 56150.0
+        },
+        {
+            "id": 3,
+            "model": "Polo",
+            "price": 49790.0
+        },
+        {
+            "id": 4,
+            "model": "Jetta",
+            "price": 93990.0
+        },
+        {
+            "id": 5,
+            "model": "Virtus",
+            "price": 72290.0
+        }
+    ]
+}

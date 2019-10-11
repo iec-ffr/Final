@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Store } from "./store";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App(){
+  return(
+    <Provider store = { Store }>
+      <div>
+        <Suspense fallback = { <h1>Loading...</h1> }>
+          <h1>Car Shopping React</h1>
+          <BrowserRouter>
+            <div>
+              <Link to="/">Home</Link>            
+            </div>            
+          </BrowserRouter>
+        </Suspense>
+      </div>      
+    </Provider>
   );
 }
 
