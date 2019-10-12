@@ -1,7 +1,7 @@
 import optinals from "./optionals-data.json";
 
-export class Optinals {
-    static getOptinals() {
+export class Optionals {
+    static getOptionals() {
         return new Promise((resolve, reject) => {
             if (optinals) {
               resolve(optinals);
@@ -11,7 +11,7 @@ export class Optinals {
         });
     }
     
-  static getOptinalsById(id) {
+  static getOptionalsById(id) {
     return new Promise((resolve, reject) => {
       const optinals = optinals.items.find(p => p.id === parseInt(id));
 
