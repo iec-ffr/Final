@@ -1,9 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Link } from "react-router-dom";
 import {ApplicationRoutes} from './ApplicationRoutes';
-import Nav from './components/Nav'
-
+import  Nav from './components/Nav'
+import { BrowserRouter } from "react-router-dom";
 import  store  from "./store";
 
 
@@ -13,8 +12,11 @@ function App(){
       <div>
         <Suspense fallback = { <h1>Loading...</h1> }>
           <h1>Car Shopping React</h1>
-            <Nav/>        
-        <ApplicationRoutes />
+          <BrowserRouter>
+          <Nav/>        
+          </BrowserRouter>
+          
+          <ApplicationRoutes />
         </Suspense>
       </div>      
     </Provider>
