@@ -23,7 +23,7 @@ const Optional = () => {
         {
             optionals.map(optional=>
             
-                <OptionalItem key={optional.id} optName={optional.name} optPrice={optional.price}/>
+                <OptionalItem key={optional.id} optId={optional.id} optName={optional.name} optPrice={optional.price}/>
             )
         }
         </>

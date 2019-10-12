@@ -23,7 +23,7 @@ export function Modelo (){
         {
             cars.map(car=>
             
-                <CarItem key={car.id} carModel={car.model} carPrice={car.price}/>
+                <CarItem key={car.id} carId={car.id} carModel={car.model} carPrice={car.price}/>
             )
         }
         </>

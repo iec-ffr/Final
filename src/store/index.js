@@ -1,26 +1,28 @@
 import { createStore } from 'redux';
+import { arrayExpression } from '@babel/types';
 
 let resumo = {
   modelo: "1",
-  versao:"22",
+  versao:"2",
   cor:"3",
-  opicional:["a","b","c","d"]
+  opicional:[],
+  total:0
 };
 
 function resum(state = resumo, action) {
    
   switch (action.type) {
     case 'ADD_MODELO': 
-    resumo.count++     
+      resumo.modelo = action.id   
       return resumo
     case 'ADD_VERSAO': 
-    resumo.count++     
+      resumo.versao = action.id       
       return resumo
-    case 'ADD_COR': 
-    resumo.count++     
+    case 'ADD_COR':  
+      resumo.cor = action.id       
       return resumo
-    case 'ADD_OPCIONAL': 
-    resumo.count++     
+    case 'ADD_OPICIONAL':  
+      resumo.opicional.push("{1,2}")
       return resumo
     default:
       return resumo;

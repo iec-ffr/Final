@@ -23,7 +23,7 @@ const Color = () => {
         {
             colors.map(color=>
             
-                <ColorItem key={color.id} colName={color.name} colPrice={color.price}/>
+                <ColorItem key={color.id} colId={color.id} colName={color.name} colPrice={color.price}/>
             )
         }
         </>

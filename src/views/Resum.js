@@ -5,15 +5,20 @@ const Resum = () =>{
     const versao = useSelector(state=>state.versao)
     const cor = useSelector(state=>state.cor)
     const opicional = useSelector(state=>state.opicional)
+    const total = useSelector(state=>state.total)
     return(
         <>
             <table border='1'>
-                <tr>
-                    <td>Modelo</td>
-                    <td>Versão</td>
-                    <td>Cor</td>
-                    <td>Opicionais</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>Versão</td>
+                        <td>Cor</td>
+                        <td>Opicionais</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>{modelo}</td>
                     <td>{versao}</td>
@@ -21,7 +26,11 @@ const Resum = () =>{
                     <td>{
                         opicional.map(o=>o)
                     }</td>
+                    <td>
+                        R$ {total}
+                    </td>
                 </tr>
+                </tbody>
             </table>
         </>
     )

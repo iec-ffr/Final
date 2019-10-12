@@ -24,7 +24,7 @@ const Version = () =>{
         {
             version.map(ver=>
             
-                <VersionItem key={ver.id} verModel={ver.model} verName={ver.name} verPrice={ver.price}/>
+                <VersionItem key={ver.id} verId={ver.id} verModel={ver.model} verName={ver.name} verPrice={ver.price}/>
             )
         }
         </>
