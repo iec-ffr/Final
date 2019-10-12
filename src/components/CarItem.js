@@ -1,11 +1,9 @@
 import React from 'react'
-import { deflate } from 'zlib'
-import { directive } from '@babel/types'
 
 
-const CartItem = props =>{
+const CarItem = props =>{
 
-    let id = props.carId
+    
     let model = props.carModel
     let price = props.carPrice
 
@@ -18,4 +16,4 @@ const CartItem = props =>{
     )
 }
 
-export default CartItem
+export default CarItem
