@@ -1,11 +1,11 @@
 import React, { Suspense, lazy } from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import { Store } from "./store";
+import  store  from "./store";
 
 function App(){
   return(
-    <Provider store = { Store }>
+    <Provider store = { store }>
       <div>
         <Suspense fallback = { <h1>Loading...</h1> }>
           <h1>Car Shopping React</h1>
