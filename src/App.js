@@ -11,7 +11,11 @@ function App(){
           <h1>Car Shopping React</h1>
           <BrowserRouter>
             <div>
-              <Link to="/">Home</Link>            
+              <Link to="/">Modelo</Link>            
+              <Link to="/">Versão</Link>    
+              <Link to="/">Cor</Link>    
+              <Link to="/">Opcionais</Link>    
+              <Link to="/">Resumo</Link>    
             </div>            
           </BrowserRouter>
         </Suspense>
