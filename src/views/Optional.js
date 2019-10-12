@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Optionals } from '../api/Optionals';
-import OptionalItem  from '../components/OptionalItem';
+import OptionalItem  from '../components/OptionalItem/OptionalItem';
 
 
 const Optional = () => {

@@ -4,7 +4,7 @@ let teste = {
   count: 1
 };
 
-function courses(state = teste, action) {
+function resum(state = teste, action) {
    
   switch (action.type) {
     case 'ADD_COUNT': 
@@ -15,6 +15,6 @@ function courses(state = teste, action) {
   }
 }
 
-const store = createStore(courses);
+const store = createStore(resum);
 
 export default store;

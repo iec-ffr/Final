@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Versions} from '../api/Versions'
-import VersionItem from '../components/VersionItem'
+import VersionItem from '../components/VersionItem/VersionItem'
 
 
 const Version = () =>{

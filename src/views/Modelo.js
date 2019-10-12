@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Cars } from '../api/Cars';
-import CarItem  from '../components/CarItem';
+import CarItem  from '../components/CarItem/CarItem';
 
 
 export function Modelo (){

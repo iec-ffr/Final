@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Colors } from '../api/Colors';
-import ColorItem  from '../components/ColorItem';
+import ColorItem  from '../components/ColorItem/ColorItem';
 
 
 const Color = () => {
