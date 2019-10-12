@@ -10,13 +10,13 @@ const ColorItem = props =>{
 
     const dispatch = useDispatch()
 
-    function addStore(verId){
+    function addStore(){
         
-        dispatch({type:'ADD_COR',id:verId})
+        dispatch({type:'ADD_COR',id:id,name:name,price:price})
     }
 
     return(
-       <div onClick={()=>addStore(id)}>
+       <div onClick={()=>addStore()}>
            <h1>{name}</h1>
            <small>R$ {price.toFixed(2)}</small>
        </div>

@@ -5,7 +5,7 @@ let resumo = {
   modelo: "1",
   versao:"2",
   cor:"3",
-  opicional:[],
+  opicional:[1,2],
   total:0
 };
 
@@ -13,16 +13,20 @@ function resum(state = resumo, action) {
    
   switch (action.type) {
     case 'ADD_MODELO': 
-      resumo.modelo = action.id   
+      resumo.modelo = action.model   
+      resumo.total += action.price  
       return resumo
     case 'ADD_VERSAO': 
-      resumo.versao = action.id       
+      resumo.versao = action.model +" - "+ action.name  
+      resumo.total += action.price       
       return resumo
     case 'ADD_COR':  
-      resumo.cor = action.id       
+      resumo.cor = action.name 
+      resumo.total += action.price        
       return resumo
     case 'ADD_OPICIONAL':  
-      resumo.opicional.push("{1,2}")
+      resumo.opicional = 1
+      resumo.total += action.price  
       return resumo
     default:
       return resumo;

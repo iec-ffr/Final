@@ -12,13 +12,13 @@ const VersionItem = props =>{
 
     const dispatch = useDispatch()
 
-    function addStore(verId){
+    function addStore(){
         
-        dispatch({type:'ADD_VERSAO',id:verId})
+        dispatch({type:'ADD_VERSAO',id:id,model:model,name:name,price:price})
     }
 
     return(
-       <div onClick={()=>addStore(id)}>
+       <div onClick={()=>addStore()}>
            <h1>{model} - {name}</h1>
            <small>R$ {price.toFixed(2)}</small>
        </div>

@@ -10,12 +10,12 @@ const CarItem = props =>{
 
     const dispatch = useDispatch()
 
-    function addStore(carId){
-        dispatch({type:'ADD_MODELO',id:carId})
+    function addStore(){
+        dispatch({type:'ADD_MODELO',id:id,model:model,price:price})
     }
 
     return(
-       <div onClick={()=>addStore(id)}>
+       <div onClick={()=>addStore()}>
            <h1>{model}</h1>
            <small>R$ {price.toFixed(2)}</small>
        </div>
