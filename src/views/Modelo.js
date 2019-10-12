@@ -1,30 +1,33 @@
 import React, { useState, useEffect } from 'react';
-// import { Cars } from './api/Products';
-// import { CarItem } from '../components/CarItem';
+import { Cars } from '../api/Cars';
+import CarItem  from '../components/CarItem';
 
 
 export function Modelo (){
-    // const [cars, setCars] = useState();
+    const [cars, setCars] = useState([]);
 
-    // useEffect(()=> {
-    //     Cars.getCars().then(
-    //         result => {setCars(result)}
-    //     );
-    // });
+    function startUp(){
+        
+        let c = Cars.getCars();
+        
+        c.then(
+            function(data){
+                setCars(data.items);
+            }
+        )
+    }
+    useEffect(() => startUp(),[])
+
     return (
         <>
-        modelo
+        {
+            cars.map(car=>
+            
+                <CarItem key={car.id} carModel={car.model} carPrice={car.price}/>
+                
+
+            )
+        }
         </>
-    )
-    // return (
-    //     <div>
-    //         <ul>
-    //             {cars.map((item) => (
-    //                 <div className="card">
-    //                     <CarItem key = { item.id } product = { item }/>
-    //                 </div>
-    //             ))}
-    //         </ul>
-    //     </div>
-    // );
+        )
 }
