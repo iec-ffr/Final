@@ -12,10 +12,7 @@ function App(){
       <div>
         <Suspense fallback = { <h1>Loading...</h1> }>
           <h1>Car Shopping React</h1>
-          <BrowserRouter>
           <Nav/>        
-          </BrowserRouter>
-          
           <ApplicationRoutes />
         </Suspense>
       </div>      

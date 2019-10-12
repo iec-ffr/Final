@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import { CarItem } from '../components/CarItem';
 
 
-export function Home (){
+export function Modelo (){
     // const [cars, setCars] = useState();
 
     // useEffect(()=> {
@@ -11,7 +11,11 @@ export function Home (){
     //         result => {setCars(result)}
     //     );
     // });
-
+    return (
+        <>
+        a
+        </>
+    )
     // return (
     //     <div>
     //         <ul>
