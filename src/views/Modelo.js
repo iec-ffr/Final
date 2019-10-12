@@ -13,7 +13,7 @@ export function Modelo (){
     // });
     return (
         <>
-        a
+        modelo
         </>
     )
     // return (
