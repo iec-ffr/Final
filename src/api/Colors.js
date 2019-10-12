@@ -1,7 +1,7 @@
 import colors from "./colors-data.json";
 
 export class Colors {
-    static getCars() {
+    static getColors() {
         return new Promise((resolve, reject) => {
             if (colors) {
                 resolve(colors);
@@ -11,7 +11,7 @@ export class Colors {
         });
     }
 
-    static getCarsById(id) {
+    static getColorsById(id) {
         return new Promise((resolve, reject) => {
             const colors = colors.items.find(p => p.id === parseInt(id));
 
