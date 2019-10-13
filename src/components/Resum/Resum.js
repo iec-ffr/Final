@@ -19,14 +19,14 @@ const Resum = () =>{
 
     return(
         <>
-            <table border='1'>
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <td>Modelo</td>
-                        <td>Versão</td>
-                        <td>Cor</td>
-                        <td>Opicionais</td>
-                        <td>Total</td>
+                        <th>Modelo</th>
+                        <th>Versão</th>
+                        <th>Cor</th>
+                        <th>Opicionais</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -22,10 +22,13 @@ export function Modelo (){
     return (
         <>
         {
-            cars.map(car=>
+
+            <div className="row">
+            {cars.map(car=>
             
-                <CarItem key={car.id} carId={car.id} carModel={car.model} carPrice={car.price}/>
-            )
+                <CarItem key={car.id} carImg={car.img} carId={car.id} carModel={car.model} carPrice={car.price}/>
+            )}
+            </div>
         }
 
         <Resum/>

@@ -5,11 +5,32 @@ const Nav = () =>{
 
     return(
         <>
-        <Link to="/modelos">Modelo</Link>
-        <Link to="/versoes">Versão</Link>
-        <Link to="/cores">Cor</Link>
-        <Link to="/opcionais">Opcionais</Link>
-        <Link to="/resumo">Resumo</Link>
+
+
+<ul className="nav justify-content-center">
+  <li className="nav-item">
+  <Link  className="nav-link" to="/modelos">MODELO</Link>
+  </li>
+  <li className="nav-item">
+  <Link  className="nav-link"  to="/versoes">VERSÃO</Link>
+  </li>
+  <li className="nav-item">
+  <Link  className="nav-link"  to="/cores">COR</Link>
+  </li>
+  <li className="nav-item">
+  <Link  className="nav-link"  to="/opcionais">OPICIONAIS</Link>
+  </li>
+  <li className="nav-item">
+  <Link  className="nav-link"  to="/resumo">RESUMO</Link>
+  </li>
+</ul>
+
+
+        
+        
+        
+        
+        
         
         </>
     )

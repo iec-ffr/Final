@@ -3,27 +3,32 @@
         {
             "id": 1,
             "model": "Gol", 
-            "price": 42590.0
+            "price": 42590.0,
+            "img":"gol.png"
         },
         {
             "id": 2,
             "model": "Voyage",
-            "price": 56150.0
+            "price": 56150.0,
+            "img":"voyage.png"
         },
         {
             "id": 3,
             "model": "Polo",
-            "price": 49790.0
+            "price": 49790.0,
+            "img":"polo.png"
         },
         {
             "id": 4,
             "model": "Jetta",
-            "price": 93990.0
+            "price": 93990.0,
+            "img":"jetta.png"
         },
         {
             "id": 5,
             "model": "Virtus",
-            "price": 72290.0
+            "price": 72290.0,
+            "img":"virtus.png"
         }
     ]
 }

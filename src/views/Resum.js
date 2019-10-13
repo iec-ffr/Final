@@ -24,7 +24,7 @@ const Resum = () =>{
 
     return(
         <>
-            <table border='1'>
+            <table class="table table-striped">
                 <tbody>
                 <tr>
                     <td>Modelo:{modelo}</td>
@@ -55,7 +55,10 @@ const Resum = () =>{
                     opicional.map((o)=>
                         <tr  onClick={()=>remover(o)}>
                             <td>
-                                {o[0]}
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            {o[0]}
                             </td>
                             <td>
                                 R${o[1]}
@@ -65,9 +68,9 @@ const Resum = () =>{
                 }
                 
                 <tr>
-                    <td>Total</td>
+                    <td><h3>Total</h3></td>
                     <td>
-                        R$ {total}
+                        <h3>R$ {total}</h3>
                     </td>
                 </tr>
                 </tbody>
