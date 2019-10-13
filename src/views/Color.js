@@ -23,10 +23,12 @@ const Color = () => {
         <>
         {
             
-            colors.map(color=>
+            <div className="row">
+            {colors.map(color=>
             
                 <ColorItem key={color.id} colId={color.id} colName={color.name} colPrice={color.price}/>
-            )
+            )}
+            </div>
         }
 
         <Resum/>

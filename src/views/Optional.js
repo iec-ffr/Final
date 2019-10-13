@@ -23,10 +23,12 @@ const Optional = () => {
         <>
         
         {
-            optionals.map(optional=>
+            <div className="row">
+            {optionals.map(optional=>
             
                 <OptionalItem key={optional.id} optId={optional.id} optName={optional.name} optPrice={optional.price}/>
-            )
+            )}
+            </div>
         }
 
         <Resum/>
