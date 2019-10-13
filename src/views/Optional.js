@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense,lazy } from 'react';
 import { Optionals } from '../api/Optionals';
-import OptionalItem  from '../components/OptionalItem/OptionalItem';
+import { Load } from '../components/Load/Load';
 
 import Resum from '../components/Resum/Resum';
+const OptionalItem = lazy(() => import('../components/OptionalItem/OptionalItem'));
 
 const Optional = () => {
     const [optionals, setOptionals] = useState([]);
@@ -26,7 +27,9 @@ const Optional = () => {
             <div className="row">
             {optionals.map(optional=>
             
+            <Suspense fallback={<Load />}>
                 <OptionalItem key={optional.id} optId={optional.id} optName={optional.name} optPrice={optional.price}/>
+            </Suspense>
             )}
             </div>
         }
