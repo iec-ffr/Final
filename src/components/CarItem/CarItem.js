@@ -12,17 +12,18 @@ const CarItem = props =>{
     const dispatch = useDispatch()
 
     function addStore(){
-        dispatch({type:'ADD_MODELO',id:id,model:model,price:price})
+        
+        dispatch({type:'ADD_MODELO',id:id,model:model,price:price,img:img})
     }
 
     
     return(
       
             <div className="card col-sm-4 text-center" onClick={()=>addStore()}>
-                <img classNameName="card-img-top" src={require(`../../assets/images/${img}`)} alt="Card image cap"/>
-                <div classNameName="card-body">
-                    <h5 classNameName="card-title">{model}</h5>
-                    <p classNameName="card-text">R$ {price.toFixed(2)}</p>
+                <img className="card-img-top" src={require(`../../assets/images/${img}`)} alt="Card image cap"/>
+                <div className="card-body">
+                    <h5 className="card-title">{model}</h5>
+                    <p className="card-text">R$ {price.toFixed(2)}</p>
                 </div>
             </div>
        

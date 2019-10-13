@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 let resumo = {
   modelo: "",
   modeloP: 0,
+  modeloImg:"",
   versao:"",
   versaoP:0,
   cor:"",
@@ -38,7 +39,7 @@ function resum(state = resumo, action) {
     case 'ADD_MODELO': 
       resumo.modelo = action.model   
       resumo.modeloP = action.price   
-      
+      resumo.modeloImg = action.img      
       /**
        * se trocar modelo a versão é apagada
        */

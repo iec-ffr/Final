@@ -7,6 +7,7 @@ import {useDispatch} from 'react-redux'
 const Resum = () =>{
     const modelo = useSelector(state=>state.modelo)
     const modeloP = useSelector(state=>state.modeloP)
+    const modeloImg = useSelector(state=>state.modeloImg)
     const versao = useSelector(state=>state.versao)
     const versaoP = useSelector(state=>state.versaoP)
     const cor = useSelector(state=>state.cor)
@@ -24,7 +25,10 @@ const Resum = () =>{
 
     return(
         <>
-            <table class="table table-striped">
+        {console.log(modeloImg)}
+        
+        {/* <img src={require(`../assets/images/${modeloImg}`)} className="img-fluid" alt="Responsive image"></img> */}
+            <table className="table table-striped">
                 <tbody>
                 <tr>
                     <td>Modelo:{modelo}</td>

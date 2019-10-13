@@ -18,10 +18,10 @@ const VersionItem = props =>{
     }
 
     return(
-        <div class="card col-6 text-center"  onClick={()=>addStore()}>
-        <div class="card-body">
-          <h4 class="card-title">{model} - {name}</h4>
-          <p class="card-text">R$ {price.toFixed(2)}</p>
+        <div className="card col-6 text-center"  onClick={()=>addStore()}>
+        <div className="card-body">
+          <h4 className="card-title">{model} - {name}</h4>
+          <p className="card-text">R$ {price.toFixed(2)}</p>
           
         </div>
       </div>
