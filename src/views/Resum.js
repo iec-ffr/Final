@@ -25,9 +25,9 @@ const Resum = () =>{
 
     return(
         <>
-        {console.log(modeloImg)}
+        {modeloImg?<img src={require(`../assets/images/${modeloImg}`)} className="img-fluid" alt="Responsive image"></img>:""}
         
-        {/* <img src={require(`../assets/images/${modeloImg}`)} className="img-fluid" alt="Responsive image"></img> */}
+        
             <table className="table table-striped">
                 <tbody>
                 <tr>
