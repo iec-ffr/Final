@@ -25,8 +25,9 @@ const Resum = () =>{
                     <td>{cor}</td>
                     <td>
                         {
-                            opicional.map(o=>o+",")
-                        
+                            opicional.map((o)=>
+                                <p>{o[0]}</p>
+                            )
                         }
                     </td>
                     <td>
@@ -35,6 +36,7 @@ const Resum = () =>{
                 </tr>
                 </tbody>
             </table>
+            *para remover o opcional, clique nele.
         </>
     )
 }

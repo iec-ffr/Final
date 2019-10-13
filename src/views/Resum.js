@@ -1,5 +1,9 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
+
+import {useDispatch} from 'react-redux'
+
+
 const Resum = () =>{
     const modelo = useSelector(state=>state.modelo)
     const modeloP = useSelector(state=>state.modeloP)
@@ -9,6 +13,15 @@ const Resum = () =>{
     const corP = useSelector(state=>state.corP)
     const opicional = useSelector(state=>state.opicional)
     const total = useSelector(state=>state.total)
+
+    const dispatch = useDispatch()
+
+    function remover(opt){
+        
+        dispatch({type:'REM_OPICIONAL',id:opt[2]})
+    }
+
+
     return(
         <>
             <table border='1'>
@@ -32,11 +45,25 @@ const Resum = () =>{
                     </td>
                 </tr>  
                 <tr>
-                    <td>Opicionais:{opicional}</td>
+                  
+                    <td>Opicionais:</td>
                     <td>
-                        R$ {total}
                     </td>
                 </tr>
+
+                {
+                    opicional.map((o)=>
+                        <tr  onClick={()=>remover(o)}>
+                            <td>
+                                {o[0]}
+                            </td>
+                            <td>
+                                R${o[1]}
+                            </td>
+                        </tr>
+                    )
+                }
+                
                 <tr>
                     <td>Total</td>
                     <td>
@@ -45,6 +72,7 @@ const Resum = () =>{
                 </tr>
                 </tbody>
             </table>
+            *Para remover o opcional, clique nele.
         </>
     )
 }
