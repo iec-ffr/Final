@@ -58,12 +58,16 @@ function resum(state = resumo, action) {
       resumo.total = calcular()        
       return resumo
     case 'ADD_OPICIONAL':  
+      for(let i in optTemp ){
+        if(optTemp[i][2] == action.id){
+          return resumo
+        }
+      }
       optTemp.push([action.name,action.price,action.id])
       resumo.opicional = optTemp
       resumo.total = calcular()   
       return resumo
     case 'REM_OPICIONAL':
-      console.log(optTemp)
       for(let i in optTemp ){
         if(optTemp[i][2] == action.id){
           optTemp.splice(i,1)
