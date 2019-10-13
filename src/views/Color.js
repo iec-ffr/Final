@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Colors } from '../api/Colors';
 import ColorItem  from '../components/ColorItem/ColorItem';
+import Resum from '../components/Resum/Resum';
 
 
 const Color = () => {
@@ -21,11 +22,14 @@ const Color = () => {
     return (
         <>
         {
+            
             colors.map(color=>
             
                 <ColorItem key={color.id} colId={color.id} colName={color.name} colPrice={color.price}/>
             )
         }
+
+        <Resum/>
         </>
         )
 }
