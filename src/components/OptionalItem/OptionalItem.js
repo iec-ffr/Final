@@ -10,13 +10,13 @@ const OptionalItem = props =>{
 
     const dispatch = useDispatch()
 
-    function addStore(optId){
+    function addStore(){
         
-        dispatch({type:'ADD_OPICIONAL',id:optId})
+        dispatch({type:'ADD_OPICIONAL',id:id,price:price,name:name})
     }
 
     return(
-       <div onClick={()=>addStore(id)}>
+       <div onClick={()=>addStore()}>
            <h1>{name}</h1>
            <small>R$ {price.toFixed(2)}</small>
        </div>

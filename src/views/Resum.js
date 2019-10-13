@@ -23,9 +23,12 @@ const Resum = () =>{
                     <td>{modelo}</td>
                     <td>{versao}</td>
                     <td>{cor}</td>
-                    <td>{
-                        opicional.map(o=>o)
-                    }</td>
+                    <td>
+                        {
+                            opicional.map(o=>o+",")
+                        
+                        }
+                    </td>
                     <td>
                         R$ {total}
                     </td>

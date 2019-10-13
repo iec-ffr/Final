@@ -2,12 +2,13 @@ import { createStore } from 'redux';
 import { arrayExpression } from '@babel/types';
 
 let resumo = {
-  modelo: "1",
-  versao:"2",
-  cor:"3",
-  opicional:[1,2],
+  modelo: "",
+  versao:"",
+  cor:"",
+  opicional:[],
   total:0
 };
+let optTemp = [];
 
 function resum(state = resumo, action) {
    
@@ -25,7 +26,8 @@ function resum(state = resumo, action) {
       resumo.total += action.price        
       return resumo
     case 'ADD_OPICIONAL':  
-      resumo.opicional = 1
+      optTemp.push(action.name)
+      resumo.opicional = optTemp
       resumo.total += action.price  
       return resumo
     default:
