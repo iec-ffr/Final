@@ -22,10 +22,12 @@ const Version = () =>{
     return (
         <>
         {
-            version.map(ver=>
+            <div className="row">
+            {version.map(ver=>
             
                 <VersionItem key={ver.id} verId={ver.id} verModel={ver.model} verName={ver.name} verPrice={ver.price}/>
-            )
+            )}
+            </div>
         }
 
         <Resum/>
